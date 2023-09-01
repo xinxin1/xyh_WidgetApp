@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoreMessageViewController" customModule="WidgetApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="more_top_message_placeholder_icon" translatesAutoresizingMaskIntoConstraints="NO" id="gsB-XM-WDC">
+                    <rect key="frame" x="147" y="197" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="F3O-Hv-Baf"/>
+                        <constraint firstAttribute="width" secondItem="gsB-XM-WDC" secondAttribute="height" id="Jne-IG-bZw"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无消息通知" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSE-ac-xEK">
+                    <rect key="frame" x="164" y="337" width="86" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" name="#A9ABB8"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="#F5F5F5"/>
+            <constraints>
+                <constraint firstItem="gsB-XM-WDC" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="IM2-FR-1bY"/>
+                <constraint firstItem="NSE-ac-xEK" firstAttribute="centerX" secondItem="gsB-XM-WDC" secondAttribute="centerX" id="ZGC-dh-s5m"/>
+                <constraint firstItem="gsB-XM-WDC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="197" id="a62-2S-4tN"/>
+                <constraint firstItem="NSE-ac-xEK" firstAttribute="top" secondItem="gsB-XM-WDC" secondAttribute="bottom" constant="20" id="mgl-k9-5uZ"/>
+            </constraints>
+            <point key="canvasLocation" x="76" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="more_top_message_placeholder_icon" width="120" height="120"/>
+        <namedColor name="#A9ABB8">
+            <color red="0.66274509803921566" green="0.6705882352941176" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="#F5F5F5">
+            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

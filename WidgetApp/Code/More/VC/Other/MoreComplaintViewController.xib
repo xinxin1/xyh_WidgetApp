@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoreComplaintViewController" customModule="WidgetApp" customModuleProvider="target">
+            <connections>
+                <outlet property="bugButton" destination="pZx-7h-DAa" id="aK3-LB-Dqf"/>
+                <outlet property="collectionView" destination="DoC-s7-la5" id="iTq-R9-ijd"/>
+                <outlet property="collectionViewHeight" destination="I9u-6C-8ll" id="9OD-Ds-ThY"/>
+                <outlet property="collectionViewWidth" destination="YUL-eJ-2Rk" id="Y7q-BU-o47"/>
+                <outlet property="feedbackButton" destination="cPG-VI-IFq" id="RKu-H7-5dE"/>
+                <outlet property="placeholderLabel" destination="e6K-o0-Zgj" id="fvU-JF-oxn"/>
+                <outlet property="submitButton" destination="qI2-b2-eHJ" id="BSe-JS-SHe"/>
+                <outlet property="textView" destination="J7I-kP-ncn" id="9iJ-Jc-N2Z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSs-9B-HOM">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5g-4q-Wy7">
+                            <rect key="frame" x="20" y="20" width="68" height="21"/>
+                            <attributedString key="attributedText">
+                                <fragment content="反馈类型">
+                                    <attributes>
+                                        <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Semibold"/>
+                                        <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=" ">
+                                    <attributes>
+                                        <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" metaFont="system" size="17"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="*">
+                                    <attributes>
+                                        <color key="NSColor" red="0.94117647058823528" green="0.1764705882352941" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="14" name="PingFangSC-Semibold"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZx-7h-DAa">
+                            <rect key="frame" x="20" y="51" width="110" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="110" id="1oE-bw-PZq"/>
+                                <constraint firstAttribute="height" constant="40" id="dgU-cR-we9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="功能异常">
+                                <color key="titleColor" name="#333333"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="typeAction:" destination="-1" eventType="touchUpInside" id="vqh-nj-2fS"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPG-VI-IFq">
+                            <rect key="frame" x="140" y="51" width="110" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="意见与建议">
+                                <color key="titleColor" name="#333333"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="typeAction:" destination="-1" eventType="touchUpInside" id="yIG-Jl-S3d"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="问题描述" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfg-uL-tRO">
+                            <rect key="frame" x="20" y="111" width="58" height="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <color key="textColor" name="#333333"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J7I-kP-ncn">
+                            <rect key="frame" x="20" y="138" width="353" height="190"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="190" id="T0r-qb-ZM9"/>
+                            </constraints>
+                            <color key="textColor" name="#333333"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入要反馈的信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6K-o0-Zgj">
+                            <rect key="frame" x="35" y="153" width="129" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" name="#A9ABB8"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传问题截图" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJT-QE-wvP">
+                            <rect key="frame" x="20" y="348" width="86" height="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <color key="textColor" name="#333333"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DoC-s7-la5">
+                            <rect key="frame" x="20" y="375" width="75" height="75"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="I9u-6C-8ll"/>
+                                <constraint firstAttribute="width" constant="75" id="YUL-eJ-2Rk"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BqM-0K-9fm">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qI2-b2-eHJ">
+                            <rect key="frame" x="46.666666666666657" y="558" width="300" height="50"/>
+                            <color key="backgroundColor" name="#644BFF"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="mOt-fC-zuT"/>
+                                <constraint firstAttribute="height" constant="50" id="wh0-Ye-9Tn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="提交反馈">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="submitAction:" destination="-1" eventType="touchUpInside" id="SrA-Y3-NIQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="#F5F5F5"/>
+                    <constraints>
+                        <constraint firstItem="pZx-7h-DAa" firstAttribute="top" secondItem="d5g-4q-Wy7" secondAttribute="bottom" constant="10" id="3UO-Wr-bMc"/>
+                        <constraint firstItem="J7I-kP-ncn" firstAttribute="centerX" secondItem="FSs-9B-HOM" secondAttribute="centerX" id="4wg-Sj-zQ3"/>
+                        <constraint firstItem="cPG-VI-IFq" firstAttribute="width" secondItem="pZx-7h-DAa" secondAttribute="width" id="741-YX-mZ4"/>
+                        <constraint firstItem="d5g-4q-Wy7" firstAttribute="top" secondItem="FSs-9B-HOM" secondAttribute="top" constant="20" id="7gi-xK-Fwn"/>
+                        <constraint firstItem="CJT-QE-wvP" firstAttribute="top" secondItem="J7I-kP-ncn" secondAttribute="bottom" constant="20" id="9oX-SS-Pto"/>
+                        <constraint firstItem="DoC-s7-la5" firstAttribute="top" secondItem="CJT-QE-wvP" secondAttribute="bottom" constant="10" id="9q7-xi-yac"/>
+                        <constraint firstItem="J7I-kP-ncn" firstAttribute="leading" secondItem="e6K-o0-Zgj" secondAttribute="leading" constant="-15" id="A1K-rq-W3M"/>
+                        <constraint firstItem="Hfg-uL-tRO" firstAttribute="top" secondItem="pZx-7h-DAa" secondAttribute="bottom" constant="20" id="HN9-nv-gbf"/>
+                        <constraint firstItem="J7I-kP-ncn" firstAttribute="top" secondItem="Hfg-uL-tRO" secondAttribute="bottom" constant="10" id="HXd-Cv-9tO"/>
+                        <constraint firstItem="qI2-b2-eHJ" firstAttribute="centerX" secondItem="B20-Wi-cSi" secondAttribute="centerX" id="Hev-fZ-dwf"/>
+                        <constraint firstItem="qI2-b2-eHJ" firstAttribute="top" secondItem="DoC-s7-la5" secondAttribute="bottom" constant="108" id="JmK-dy-fKI"/>
+                        <constraint firstItem="cPG-VI-IFq" firstAttribute="height" secondItem="pZx-7h-DAa" secondAttribute="height" id="Q00-0I-BGv"/>
+                        <constraint firstItem="B20-Wi-cSi" firstAttribute="bottom" secondItem="qI2-b2-eHJ" secondAttribute="bottom" constant="100" id="T44-cO-rkX"/>
+                        <constraint firstItem="cPG-VI-IFq" firstAttribute="leading" secondItem="pZx-7h-DAa" secondAttribute="trailing" constant="10" id="VIQ-7k-fkm"/>
+                        <constraint firstItem="J7I-kP-ncn" firstAttribute="leading" secondItem="DoC-s7-la5" secondAttribute="leading" id="WbT-lJ-twe"/>
+                        <constraint firstItem="CJT-QE-wvP" firstAttribute="leading" secondItem="DoC-s7-la5" secondAttribute="leading" id="efM-0U-Pkl"/>
+                        <constraint firstItem="J7I-kP-ncn" firstAttribute="top" secondItem="e6K-o0-Zgj" secondAttribute="top" constant="-15" id="iRR-nC-HGF"/>
+                        <constraint firstItem="cPG-VI-IFq" firstAttribute="centerY" secondItem="pZx-7h-DAa" secondAttribute="centerY" id="kuf-ce-MRF"/>
+                        <constraint firstItem="pZx-7h-DAa" firstAttribute="leading" secondItem="DoC-s7-la5" secondAttribute="leading" id="sFw-xD-kaY"/>
+                        <constraint firstItem="d5g-4q-Wy7" firstAttribute="leading" secondItem="DoC-s7-la5" secondAttribute="leading" id="tJz-mh-zjn"/>
+                        <constraint firstItem="Hfg-uL-tRO" firstAttribute="leading" secondItem="DoC-s7-la5" secondAttribute="leading" id="tmm-7b-ZFU"/>
+                        <constraint firstItem="qI2-b2-eHJ" firstAttribute="centerX" secondItem="FSs-9B-HOM" secondAttribute="centerX" id="uro-V6-YVF"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="B20-Wi-cSi"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="dIw-EK-kR5"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="#F5F5F5"/>
+            <constraints>
+                <constraint firstItem="FSs-9B-HOM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7Pt-ow-nlo"/>
+                <constraint firstItem="FSs-9B-HOM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7Ri-5t-rVC"/>
+                <constraint firstItem="d5g-4q-Wy7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Cmf-62-pAX"/>
+                <constraint firstAttribute="trailing" secondItem="FSs-9B-HOM" secondAttribute="trailing" id="ebt-3M-fid"/>
+                <constraint firstItem="FSs-9B-HOM" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="m4h-3R-Kk8"/>
+            </constraints>
+            <point key="canvasLocation" x="-8.3969465648854964" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="#333333">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="#644BFF">
+            <color red="0.39215686274509803" green="0.29411764705882354" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="#A9ABB8">
+            <color red="0.66274509803921566" green="0.6705882352941176" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="#F5F5F5">
+            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

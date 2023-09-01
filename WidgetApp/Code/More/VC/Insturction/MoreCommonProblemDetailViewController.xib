@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoreCommonProblemDetailViewController" customModule="WidgetApp" customModuleProvider="target">
+            <connections>
+                <outlet property="contentLabel" destination="wmR-RK-xpi" id="EOt-ex-7dl"/>
+                <outlet property="hotImageView" destination="IEr-dP-a1j" id="cFp-Jz-Ucc"/>
+                <outlet property="titleLabel" destination="4h4-3a-gTY" id="bjH-Pa-sID"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uiY-kY-oUL">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gdi-W6-CzD" customClass="AnimatableView" customModule="IBAnimatable">
+                            <rect key="frame" x="20" y="16" width="353" height="55"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRH-qa-gUT">
+                                    <rect key="frame" x="75.333333333333329" y="0.0" width="202.66666666666669" height="55"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIP权益的相关问题 " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4h4-3a-gTY">
+                                            <rect key="frame" x="0.0" y="15.666666666666668" width="178.66666666666666" height="24.000000000000004"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                            <color key="textColor" name="#333333"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="more_question_hot_icon" translatesAutoresizingMaskIntoConstraints="NO" id="IEr-dP-a1j">
+                                            <rect key="frame" x="184.66666666666669" y="17.666666666666664" width="18" height="18"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="18" id="KpO-uH-eh2"/>
+                                                <constraint firstAttribute="width" constant="18" id="P2D-tg-pvT"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="4h4-3a-gTY" firstAttribute="centerY" secondItem="rRH-qa-gUT" secondAttribute="centerY" id="1qH-f2-V6o"/>
+                                        <constraint firstAttribute="trailing" secondItem="IEr-dP-a1j" secondAttribute="trailing" id="52R-mp-w36"/>
+                                        <constraint firstItem="IEr-dP-a1j" firstAttribute="top" secondItem="4h4-3a-gTY" secondAttribute="top" constant="2" id="74H-I5-UzT"/>
+                                        <constraint firstItem="4h4-3a-gTY" firstAttribute="leading" secondItem="rRH-qa-gUT" secondAttribute="leading" id="78V-xn-ZgG"/>
+                                        <constraint firstItem="4h4-3a-gTY" firstAttribute="top" secondItem="rRH-qa-gUT" secondAttribute="top" constant="15.5" id="nZG-ul-s8i"/>
+                                        <constraint firstItem="4h4-3a-gTY" firstAttribute="trailing" secondItem="IEr-dP-a1j" secondAttribute="leading" constant="-6" id="p0c-Ql-zEY"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="rRH-qa-gUT" firstAttribute="centerY" secondItem="Gdi-W6-CzD" secondAttribute="centerY" id="3Ip-vM-53k"/>
+                                <constraint firstItem="rRH-qa-gUT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Gdi-W6-CzD" secondAttribute="leading" constant="20" id="NDd-PR-fxi"/>
+                                <constraint firstItem="rRH-qa-gUT" firstAttribute="centerX" secondItem="Gdi-W6-CzD" secondAttribute="centerX" id="WLj-IO-7V2"/>
+                                <constraint firstItem="rRH-qa-gUT" firstAttribute="top" secondItem="Gdi-W6-CzD" secondAttribute="top" id="g9x-ms-gpz"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bTg-e7-6wF" customClass="AnimatableView" customModule="IBAnimatable">
+                            <rect key="frame" x="20" y="83" width="353" height="458"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmR-RK-xpi">
+                                    <rect key="frame" x="20" y="20" width="313" height="418"/>
+                                    <string key="text">      拉点影和府增合认革前所已广物事众四劳将听易集布门难且面大长准格写委半节业三火委影四问取教历再色元办用类应区年真所值节则气手确值必种位头。院信在图组把求性后石员边这何务示张之治观义圆装之马区便次会物又回知听安形克也可指三有根使海市斗就效决维养能长先写段院养满设史。组条做线才生求下小团从于张上科分断斗众议该际全至风必走各至别等状程月集器始做响素治。
+      称中老里根县种之眼向率存要开调五了包被劳保易天根成段观民品交做与把联矿边性律学带装众原就书因步内列声红流器严日该满片到。共出存名放革立本图院经运型红严半条外观支飞总农别已种果改证气系社前定量共完林土被得者达条平员影场个你越置习放题速写式动联物酸如样美研称管农深那义。
+      确组工装克感非之听全人十状支立流特集达已什类标整资事构应界相压府周几将九清说还事京派严家亲完快算见列即用议江转门受重质又明。资团头是产会其带代劳完极界层者步里规起易手分体角战把生文第速证非现共六装了角压成重小面权小了又红管该。
+      义交边参建社江区七走级离老断回金一花信件片题日收西九毛农证示过转油认人列如五广圆特动红商过力式。</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" name="#333333"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="wmR-RK-xpi" firstAttribute="top" secondItem="bTg-e7-6wF" secondAttribute="top" constant="20" id="Dgr-Dg-TKO"/>
+                                <constraint firstItem="wmR-RK-xpi" firstAttribute="leading" secondItem="bTg-e7-6wF" secondAttribute="leading" constant="20" id="GUQ-mt-Uvn"/>
+                                <constraint firstAttribute="bottom" secondItem="wmR-RK-xpi" secondAttribute="bottom" constant="20" id="aKn-X1-MbN"/>
+                                <constraint firstAttribute="trailing" secondItem="wmR-RK-xpi" secondAttribute="trailing" constant="20" id="exE-Hq-OTo"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" name="#F5F5F5"/>
+                    <constraints>
+                        <constraint firstItem="Gdi-W6-CzD" firstAttribute="top" secondItem="uiY-kY-oUL" secondAttribute="top" constant="16" id="48e-6N-6OV"/>
+                        <constraint firstItem="bTg-e7-6wF" firstAttribute="centerX" secondItem="Gdi-W6-CzD" secondAttribute="centerX" id="6T4-zX-sk9"/>
+                        <constraint firstAttribute="bottom" secondItem="bTg-e7-6wF" secondAttribute="bottom" constant="20" id="IxO-1J-xUl"/>
+                        <constraint firstItem="Gdi-W6-CzD" firstAttribute="leading" secondItem="uiY-kY-oUL" secondAttribute="leading" constant="20" symbolic="YES" id="J2t-H4-Yy9"/>
+                        <constraint firstAttribute="trailing" secondItem="Gdi-W6-CzD" secondAttribute="trailing" constant="20" symbolic="YES" id="Xvc-hM-hGG"/>
+                        <constraint firstItem="bTg-e7-6wF" firstAttribute="top" secondItem="Gdi-W6-CzD" secondAttribute="bottom" constant="12" id="bxh-2A-CKS"/>
+                        <constraint firstItem="bTg-e7-6wF" firstAttribute="width" secondItem="Gdi-W6-CzD" secondAttribute="width" id="hEP-Nu-5ce"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="1k9-YU-31Z"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="XU9-6b-Q3h"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="uiY-kY-oUL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3lv-FN-Xgo"/>
+                <constraint firstItem="uiY-kY-oUL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CbS-Sb-yhW"/>
+                <constraint firstAttribute="trailing" secondItem="Gdi-W6-CzD" secondAttribute="trailing" constant="20" id="R5C-ab-Tro"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="uiY-kY-oUL" secondAttribute="bottom" id="SyG-X3-HtR"/>
+                <constraint firstItem="uiY-kY-oUL" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="hVK-as-evZ"/>
+                <constraint firstAttribute="trailing" secondItem="uiY-kY-oUL" secondAttribute="trailing" id="o0T-7E-1th"/>
+                <constraint firstItem="Gdi-W6-CzD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="vvz-ib-ugM"/>
+            </constraints>
+            <point key="canvasLocation" x="87.786259541984734" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="more_question_hot_icon" width="18" height="18"/>
+        <namedColor name="#333333">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="#F5F5F5">
+            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

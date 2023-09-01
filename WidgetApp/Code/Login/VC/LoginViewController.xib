@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="pang.ttf">
+            <string>Pangmenzhengdaoqingsongti</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="WidgetApp" customModuleProvider="target">
+            <connections>
+                <outlet property="agreementLabel" destination="HKO-3P-k9n" id="v7X-Dm-DnB"/>
+                <outlet property="defaultLoginButton" destination="PBz-lf-REj" id="Bxm-KI-RQS"/>
+                <outlet property="touchImageView" destination="qwA-oO-SpC" id="2OT-nk-BkV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qwA-oO-SpC">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="552"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="73c-XF-crP" customClass="AnimatableView" customModule="IBAnimatable">
+                    <rect key="frame" x="0.0" y="552" width="393" height="300"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fm6-x2-JJW">
+                            <rect key="frame" x="177.33333333333334" y="40" width="38.333333333333343" height="20"/>
+                            <fontDescription key="fontDescription" name="Pangmenzhengdaoqingsongti" family="Pangmenzhengdaoqingsongti" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBz-lf-REj">
+                            <rect key="frame" x="66.666666666666686" y="90" width="260" height="45"/>
+                            <color key="backgroundColor" name="#WeChatColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="FTK-mE-bM6"/>
+                                <constraint firstAttribute="width" constant="260" id="vQv-BS-I1W"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                            <state key="normal" title="微信" image="login_channel_wechat_icon">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="VaL-xK-as1"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKO-3P-k9n">
+                            <rect key="frame" x="82.666666666666686" y="150" width="228" height="17"/>
+                            <attributedString key="attributedText">
+                                <fragment content="登录代表同意">
+                                    <attributes>
+                                        <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="12" name="PingFangSC-Semibold"/>
+                                        <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="《用户协议》、《隐私政策》">
+                                    <attributes>
+                                        <color key="NSColor" red="0.0" green="0.6470588235294118" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="12" name="PingFangSC-Semibold"/>
+                                        <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="其他快捷登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baQ-fZ-hJ7">
+                            <rect key="frame" x="159.66666666666666" y="200" width="74" height="14.666666666666657"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                            <color key="textColor" name="#A9ABB8"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="inv-Fn-HYQ">
+                            <rect key="frame" x="45.666666666666657" y="207" width="108" height="1"/>
+                            <color key="backgroundColor" name="#A9ABB8"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="108" id="0Ps-Dv-bHi"/>
+                                <constraint firstAttribute="height" constant="1" id="EJ3-GV-pna"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwS-N5-qSt">
+                            <rect key="frame" x="239.66666666666663" y="207" width="108" height="1"/>
+                            <color key="backgroundColor" name="#A9ABB8"/>
+                        </view>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KsN-Kg-nul">
+                            <rect key="frame" x="182.66666666666666" y="229.66666666666663" width="28" height="28"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="KsN-Kg-nul" secondAttribute="height" id="3P2-5T-0JI"/>
+                                <constraint firstAttribute="width" constant="28" id="NPV-iJ-av6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                            <state key="normal" backgroundImage="login_channer_apple_icon">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="Y06-9a-YUl"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="HKO-3P-k9n" firstAttribute="centerX" secondItem="73c-XF-crP" secondAttribute="centerX" id="2fK-Ge-gbE"/>
+                        <constraint firstItem="baQ-fZ-hJ7" firstAttribute="leading" secondItem="inv-Fn-HYQ" secondAttribute="trailing" constant="6" id="8tJ-iM-zbq"/>
+                        <constraint firstItem="PBz-lf-REj" firstAttribute="centerX" secondItem="73c-XF-crP" secondAttribute="centerX" id="AA6-SR-xOP"/>
+                        <constraint firstItem="KsN-Kg-nul" firstAttribute="top" secondItem="baQ-fZ-hJ7" secondAttribute="bottom" constant="15" id="CsI-rc-6Fk"/>
+                        <constraint firstItem="KsN-Kg-nul" firstAttribute="centerX" secondItem="73c-XF-crP" secondAttribute="centerX" id="Lei-3B-31a"/>
+                        <constraint firstItem="baQ-fZ-hJ7" firstAttribute="top" secondItem="PBz-lf-REj" secondAttribute="bottom" constant="65" id="Nwc-nI-Apb"/>
+                        <constraint firstItem="baQ-fZ-hJ7" firstAttribute="centerX" secondItem="73c-XF-crP" secondAttribute="centerX" id="SLe-xh-f5S"/>
+                        <constraint firstItem="fwS-N5-qSt" firstAttribute="width" secondItem="inv-Fn-HYQ" secondAttribute="width" id="Tsi-Gv-1aq"/>
+                        <constraint firstItem="fwS-N5-qSt" firstAttribute="height" secondItem="inv-Fn-HYQ" secondAttribute="height" id="Y01-ZF-MOz"/>
+                        <constraint firstItem="HKO-3P-k9n" firstAttribute="top" secondItem="PBz-lf-REj" secondAttribute="bottom" constant="15" id="hnx-40-w5O"/>
+                        <constraint firstItem="fwS-N5-qSt" firstAttribute="leading" secondItem="baQ-fZ-hJ7" secondAttribute="trailing" constant="6" id="oh8-HG-sRc"/>
+                        <constraint firstItem="PBz-lf-REj" firstAttribute="top" secondItem="73c-XF-crP" secondAttribute="top" constant="90" id="qIr-ut-bik"/>
+                        <constraint firstItem="fm6-x2-JJW" firstAttribute="top" secondItem="73c-XF-crP" secondAttribute="top" constant="40" id="slK-vd-AG5"/>
+                        <constraint firstItem="inv-Fn-HYQ" firstAttribute="centerY" secondItem="baQ-fZ-hJ7" secondAttribute="centerY" id="uqN-xb-XbL"/>
+                        <constraint firstItem="fm6-x2-JJW" firstAttribute="centerX" secondItem="73c-XF-crP" secondAttribute="centerX" id="vEN-79-4Qx"/>
+                        <constraint firstAttribute="height" constant="300" id="wB9-uW-OdT"/>
+                        <constraint firstItem="fwS-N5-qSt" firstAttribute="centerY" secondItem="inv-Fn-HYQ" secondAttribute="centerY" id="y6z-Cl-70q"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="_cornerSides" value="topLeft,topRight"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59881389693708609" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="73c-XF-crP" secondAttribute="trailing" id="Ehq-Bx-mJs"/>
+                <constraint firstItem="73c-XF-crP" firstAttribute="top" secondItem="qwA-oO-SpC" secondAttribute="bottom" id="HJN-2b-ZTK"/>
+                <constraint firstItem="73c-XF-crP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Zhr-Bd-F0h"/>
+                <constraint firstItem="qwA-oO-SpC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aDs-mI-BDM"/>
+                <constraint firstAttribute="bottom" secondItem="73c-XF-crP" secondAttribute="bottom" id="bRO-TD-niH"/>
+                <constraint firstAttribute="trailing" secondItem="qwA-oO-SpC" secondAttribute="trailing" id="iKv-VO-hs4"/>
+                <constraint firstItem="qwA-oO-SpC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sr5-hq-9EZ"/>
+            </constraints>
+            <point key="canvasLocation" x="96.946564885496173" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_channel_wechat_icon" width="24" height="24"/>
+        <image name="login_channer_apple_icon" width="28" height="28"/>
+        <namedColor name="#A9ABB8">
+            <color red="0.66274509803921566" green="0.6705882352941176" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="#WeChatColor">
+            <color red="0.14509803921568629" green="0.78431372549019607" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

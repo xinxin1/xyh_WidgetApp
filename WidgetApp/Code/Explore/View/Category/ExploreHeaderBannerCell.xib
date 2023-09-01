@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ExploreHeaderBannerCell" customModule="WidgetApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="179"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="179"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXV-E2-xLN">
+                        <rect key="frame" x="0.0" y="0.0" width="321" height="179"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="explore_top_banner_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="WoQ-x0-40W">
+                                <rect key="frame" x="0.0" y="0.0" width="321" height="179"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WoQ-x0-40W" firstAttribute="leading" secondItem="VXV-E2-xLN" secondAttribute="leading" id="5WD-IC-vAN"/>
+                            <constraint firstItem="WoQ-x0-40W" firstAttribute="top" secondItem="VXV-E2-xLN" secondAttribute="top" id="SH9-kj-dLW"/>
+                            <constraint firstAttribute="bottom" secondItem="WoQ-x0-40W" secondAttribute="bottom" id="VNY-Gb-t3f"/>
+                            <constraint firstAttribute="trailing" secondItem="WoQ-x0-40W" secondAttribute="trailing" id="ye7-qt-PDX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VXV-E2-xLN" secondAttribute="bottom" id="b3U-hW-GMX"/>
+                <constraint firstAttribute="trailing" secondItem="VXV-E2-xLN" secondAttribute="trailing" id="fzd-9D-80d"/>
+                <constraint firstItem="VXV-E2-xLN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="p4i-ST-sXX"/>
+                <constraint firstItem="VXV-E2-xLN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wZu-as-Mhg"/>
+            </constraints>
+            <size key="customSize" width="321" height="179"/>
+            <connections>
+                <outlet property="cardView" destination="VXV-E2-xLN" id="63H-z3-7gw"/>
+                <outlet property="imageView" destination="WoQ-x0-40W" id="haz-n3-RA1"/>
+            </connections>
+            <point key="canvasLocation" x="290.83969465648852" y="43.309859154929576"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="explore_top_banner_placeholder" width="318" height="168"/>
+    </resources>
+</document>
